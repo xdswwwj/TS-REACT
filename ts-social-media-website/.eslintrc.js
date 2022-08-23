@@ -13,7 +13,14 @@ module.exports = {
       jsx: true, // JSX의 구문 분석을 허용
     },
   },
-  rules: {},
+  rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
+  },
   settings: {
     react: {
       version: "detect", // 사용할 react 버전을 자동으로 감지하도록 eslint-plugin-react에 지시한다.
